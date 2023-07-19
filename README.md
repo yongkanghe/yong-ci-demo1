@@ -59,43 +59,31 @@ This repo is configured to have the following additonal branches
 
 **(main branch not shown here)**
 
-1. Each branch has a text file in the root of the branch with the same name referred to here as `branch-file.txt`.
+1. Each branch has a new text file in it with the same name referred to here as `branch-file.txt`.
 
-2. To make code PRs easier you can simply modify the text in the `branch-file.txt` to get a code change to submit.
+2. Navigate to the Pull Requests tab root and you should see `Create pull request`
 
-![](images/branch-file.png)
+3. Select a branch and it should populate a PR template
 
-3. Double click the file to access the editor.
-
-![](images/edit_branch-file.png)
-
-4. Add or change contents of the file and commit changes
-
-![](images/commit-changes.png)
-
-5. Navigate back to the repo root and you should see `compare & pull request`
-
-![](images/compare-pull-request.png)
-
-6. Simply use all of the defaults and select `create pull request`
+4. Simply use all of the defaults and select `Create pull request`
 
 ![](images/create-pr.png)
 
-7. Repeat for the other branches branches
+5. Repeat for the other branches branches
 
 The github actions located in `.github/workflows` will provide the required actions during PRs
 
-8. Enable branch protection
+6. Enable branch protection
 
 ![](images/branch-protection.png)
 
-9. Configure branch protection for `main`
+7. Configure branch protection for `main`
 
 ![](images/branch_policy.png)
 
 **NOTE: BE SURE TO SELECT BOTH ACTIONS** `Wiz-cli Dockerfile and Container Scan` and `Wiz-cli IaC Scan`
 
-10. Go back and view you PRs
+8. Go back and view you PRs
 
 ![](images/prs_listed.png)
 
