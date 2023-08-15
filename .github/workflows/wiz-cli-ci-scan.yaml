@@ -49,10 +49,10 @@ jobs:
       run: |
         ./wizcli iac scan --path ${{ env.SCAN_PATH }} --policy "$IAC_POLICY" --policy-hits-only --output wiz-iac-scan-results.json,sarif,true
     
-    - uses: github/codeql-action/upload-sarif@v2
-      with:
-        sarif_file: wiz-iac-scan-results.json
-      if: always()
+    # - uses: github/codeql-action/upload-sarif@v2
+    #   with:
+    #     sarif_file: wiz-iac-scan-results.json
+    #   if: always()
 
     - name: Build the Docker image
       run: |
